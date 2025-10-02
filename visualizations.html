@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>My Visualizations</title>
+</head>
+<body>
+    <main>
+        <nav>
+        <a href="index.html#about">About</a> |
+        <a href="visualizations.html">Visualization</a> |
+        <a href="index.html#education">Education</a> |
+        <a href="index.html#skills">Skills</a> |
+        <a href="index.html#experience">Experience</a> |
+        <a href="index.html#projects">Projects</a> |
+        <a href="index.html#gallery">Images</a> |
+        <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <h1>Visualizations</h1>
+            <h2>
+                Money that I should have saved up but instead spent on Videogames...
+            </h2>
+        <div>
+            <svg width="900" height="600"><rect width="100%" height="100%" fill="white" />
+
+                <!-- Outlines -->
+                <rect x="50" y="0" width="2" height="550" fill="black"></rect>
+                <rect x="50" y="550" width="800" height="2" fill="black"></rect>
+                
+                <!-- Lables -->
+                <text text-anchor="end" x="40"  y="50" font-family="Verdana" font-size="13" fill="black">500$</text>
+                <text text-anchor="end" x="40"  y="150" font-family="Verdana" font-size="13" fill="black">400$</text>
+                <text text-anchor="end" x="40"  y="250" font-family="Verdana" font-size="13" fill="black">300$</text>
+                <text text-anchor="end" x="40"  y="350" font-family="Verdana" font-size="13" fill="black">200$</text>
+                <text text-anchor="end" x="40"  y="450" font-family="Verdana" font-size="13" fill="black">100$</text>
+                <text x="100" y="580" font-family="Verdana" font-size="15" fill="black">Jan</text>
+                <text x="200" y="580" font-family="Verdana" font-size="15" fill="black">Feb</text>
+                <text x="300" y="580" font-family="Verdana" font-size="15" fill="black">Mar</text>
+                <text x="400" y="580" font-family="Verdana" font-size="15" fill="black">Apr</text>
+                <text x="500" y="580" font-family="Verdana" font-size="15" fill="black">May</text>
+                <text x="600" y="580" font-family="Verdana" font-size="15" fill="black">Jun</text>
+                <text x="700" y="580" font-family="Verdana" font-size="15" fill="black">Jul</text>
+                <text x="800" y="580" font-family="Verdana" font-size="15" fill="black">Aug</text>
+
+                <!-- Bars -->
+
+                <!-- 1st (Honkai Starrail) -->
+                <rect x="90" y="350" width="50" height="200" fill="#A7C7E7" class="bar-data"></rect>
+
+                <!-- 2nd (Steam) -->
+                <rect x="90" y="229" width="50" height="121" fill="#1F77B4" class="bar-data"></rect> <!-- Jan -->
+                <rect x="190" y="506" width="50" height="44"  fill="#1F77B4" class="bar-data"></rect> 
+                <rect x="290" y="506" width="50" height="44"  fill="#1F77B4" class="bar-data"></rect> 
+                <rect x="390" y="495" width="50" height="55"  fill="#1F77B4" class="bar-data"></rect> 
+                <rect x="490" y="506" width="50" height="44"  fill="#1F77B4" class="bar-data"></rect> 
+                <rect x="590" y="517" width="50" height="33"  fill="#1F77B4" class="bar-data"></rect> 
+                <rect x="690" y="484" width="50" height="66"  fill="#1F77B4" class="bar-data"></rect> 
+                <rect x="790" y="506" width="50" height="44"  fill="#1F77B4" class="bar-data"></rect>  
+
+                <!-- 3rd (League of Legends) -->
+                <rect x="90"  y="207" width="50" height="22"  fill="#8DAA91" class="bar-data"></rect>  
+                <rect x="190" y="473" width="50" height="33"  fill="#8DAA91" class="bar-data"></rect>  
+                <rect x="290" y="462" width="50" height="44"  fill="#8DAA91" class="bar-data"></rect> 
+                <rect x="390" y="429" width="50" height="66"  fill="#8DAA91" class="bar-data"></rect>  
+                <rect x="490" y="418" width="50" height="88"  fill="#8DAA91" class="bar-data"></rect>  
+                <rect x="590" y="462" width="50" height="55"  fill="#8DAA91" class="bar-data"></rect>  
+                <rect x="690" y="374" width="50" height="110" fill="#8DAA91" class="bar-data"></rect>  
+                <rect x="790" y="275" width="50" height="231" fill="#8DAA91" class="bar-data"></rect> 
+
+                <!-- 4th (Gaming Equipment - Sim Racing) -->
+                <rect x="90"  y="190" width="50" height="0"   fill="#D4846C" class="bar-data"></rect> 
+                <rect x="190" y="445" width="50" height="0"   fill="#D4846C" class="bar-data"></rect> 
+                <rect x="290" y="407" width="50" height="55"  fill="#D4846C" class="bar-data"></rect> 
+                <rect x="390" y="264" width="50" height="165" fill="#D4846C" class="bar-data"></rect> 
+                <rect x="490" y="330" width="50" height="88"  fill="#D4846C" class="bar-data"></rect> 
+                <rect x="590" y="132" width="50" height="330" fill="#D4846C" class="bar-data"></rect> 
+                <rect x="690" y="154" width="50" height="220" fill="#D4846C" class="bar-data"></rect> 
+                <rect x="790" y="143" width="50" height="132" fill="#D4846C" class="bar-data"></rect> 
+
+                <!-- Tooltip -->
+                <g id="tooltip" visibility="hidden" style="pointer-events:none">
+                    <rect id="tooltip-box" shape-rendering="crispEdges" width="140" height="40" style="fill:#fff;stroke:#000;stroke-width:2"></rect>
+                    <text id="tooltip-text" font-family="Verdana" font-size="13" x="8" y="18" fill="black">—</text>
+                </g>
+
+                <!-- Legend -->
+                <g id="legend" transform="translate(80,20)">
+                    <rect width="160" height="100" fill="white" stroke="black"></rect>
+                    <text x="10" y="20" font-size="12" fill="black">Legend:</text>
+                    <text x="20" y="40" font-size="12" fill="#A7C7E7">■ Honkai Starrail</text>
+                    <text x="20" y="55" font-size="12" fill="#1F77B4">■ Steam</text>
+                    <text x="20" y="70" font-size="12" fill="#8DAA91">■ League of Legends</text>
+                    <text x="20" y="85" font-size="12" fill="#D4846C">■ Sim Racing</text>
+                </g>
+                                    
+                        
+            </svg>
+
+        </div>
+
+        <h2>
+            Piet Mondrian Inspired Art
+        </h2>
+
+        <h3>
+            Click on the Image to Generate a New One!
+        </h3>
+
+        <div style="max-width: 50%">
+            <svg id="art-display" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" aria-label="Mondrian"></svg>
+        </div>
+        
+        <script src="vis.js"></script>
+        <script src="mondrian.js"></script>
+    </main>
+
+</body>
+</html>

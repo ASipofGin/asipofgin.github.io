@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Andy Zhang — Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal site and resume for Andy Zhang.">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Simple site-wide header & nav -->
+  <header>
+    <h1 id="name">Andy Zhang</h1>
+
+    <script>
+      const names = ["Andy Zhang", "张昕洋", "チョウ　シンヨウ"]; // swap these as needed
+      let i = 0;
+      const nameEl = document.getElementById("name");
+
+      setInterval(() => {
+        // fade out
+        nameEl.classList.add("fade-out");
+
+        setTimeout(() => {
+          // change text when faded
+          i = (i + 1) % names.length;
+          nameEl.textContent = names[i];
+          // fade back in
+          nameEl.classList.remove("fade-out");
+        }, 600); // match transition duration
+      }, 3000); // how often to swap (3s here)
+    </script>
+    <p><strong>Major:</strong> BSc, Interactive Arts & Technology (Interactive Systems), Simon Fraser University</p>
+
+  </header>
+
+  <main>
+
+    <!-- About / Intro -->
+    <nav>
+      <a href="#about">About</a> |
+      <a href="visualizations.html">Visualization</a> |
+      <a href="#education">Education</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#experience">Experience</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#gallery">Images</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m Andy, an Interactive Arts & Technology student focused on
+        <em>interactive systems, UI/UX, and media tech</em>. I enjoy building practical
+        tools and visuals, from web interfaces to data-driven graphics, and I love
+        turning complex ideas into clear, simple experiences.
+      </p>
+    </section>
+
+
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Simon Fraser University (SFU)</strong> |  BSc, Interactive Arts & Technology (Interactive Systems)
+          <br>Selected coursework: Human-Computer Interaction, Web Design & Development,
+          Information Visualization, Programming Fundamentals, Audio/Visual Production
+        </li>
+        <li>
+          <strong>Waseda University (Exchange)</strong> | School of International Liberal Studies
+          <br>Focus: Japanese language, cross-cultural communication
+        </li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3>Technical</h3>
+      <ul>
+        <li>Languages: HTML, CSS, JavaScript, Python, Java</li>
+        <li>Design & Prototyping: Figma, Adobe XD, Illustrator, InDesign, Photoshop</li>
+        <li>3D & Media: Blender, Maya, Unity, Premiere, After Effects</li>
+        <li>Web & Tools: Git/GitHub, Markdown, basic SEO, accessibility basics</li>
+        <li>AV/IT: Classroom AV support, Crestron/AVX familiarity, troubleshooting</li>
+      </ul>
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Project & Event Coordination</li>
+        <li>Technical Support & Documentation</li>
+        <li>Cross-functional teamwork, community engagement</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article>
+        <h3>IT Assett Coordinator & Administrator — Tiktok</h3>
+        <p>
+          Managed IT assets for 300+ employees across multiple offices. Handled
+          procurement, inventory, and lifecycle tracking using ServiceNow and
+          Excel. Coordinated with vendors and internal teams to ensure timely
+          delivery and setup of equipment.
+        </p>
+      </article>
+
+      <article>
+        <h3>Coordinator, Projects & Events — SFU Beedie School of Business</h3>
+        <p>
+          Planned and delivered in-person and hybrid events, including a case
+          competition and retreats. Coordinated vendors, volunteers, and
+          cross-team logistics; produced event materials and post-event wrap-ups.
+        </p>
+      </article>
+
+      <article>
+        <h3>Office Coordinator — Golden Spike Days Festival Society</h3>
+        <p>
+          Updated website content, built forms, and supported communications.
+          Assisted with vendor/volunteer operations and on-site event logistics.
+        </p>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Occult Crescent Companion (FFXIV)</strong> — Static site with interactive maps,
+          job cards, and guides. Built with HTML/CSS/JS; GitHub Pages for hosting.
+          <br>
+          <a href="https://asipofgin.github.io/Unnamed-Occult-Crescent-Tool/">GitHub</a>
+        </li>
+        <li>
+          <strong>Photography VR</strong> — Unity-based prototype exploring spatial storytelling.
+        </li>
+        <li>
+          <strong>Growing Better</strong> — 3D animation short created with Maya.
+        </li>
+      </ul>
+      <p>
+        More on GitHub: <a href="https://github.com/ASipofGin" target="_blank" rel="noopener">github.com/ASipofGin</a>
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Images / Gallery -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <figure>
+        <img src="https://zhang.crd.co/assets/images/image17.png?v=da5509b3" alt="Project screenshot placeholder" width="800" height="400">
+        <figcaption>Recent project snapshot</figcaption>
+      </figure>
+      <figure>
+        <img src="https://zhang.crd.co/assets/images/image03.jpg?v=da5509b3" alt="Design mockup placeholder" width="600" height="400">
+        <figcaption>UI/UX mockup</figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:xza259@sfu.ca">xza259@sfu.ca</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/xzandy" target="_blank" rel="noopener">linkedin.com/in/xzandy</a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/ASipofGin" target="_blank" rel="noopener">github.com/ASipofGin</a>
+      </p>
+      <p>
+        Location: Vancouver, BC, Canada
+      </p>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>© <span id="year">2025</span> Andy Zhang</p>
+  </footer>
+
+</body>
+</html>
