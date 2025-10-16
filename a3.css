@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#view,
+#view2,
+#view3,
+#view4,
+#view5,
+#view6,
+#view7,
+#view8 {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+nav {
+  position: sticky;
+  top: 0;              /* sticks to the very top */
+  background: #fff;    /* give it a background so content doesn’t show through */
+  padding: 0.5rem; 
+  padding-left: 0rem;    
+  border-bottom: 1px solid #ccc; /* optional styling */
+  z-index: 1000;       /* keeps it above other content */
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(204, 74, 23); /* link color */
+  outline-color: white;
+  transition: outline-color 0.5s ease-in-out;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;          /* place underline just below text */
+  width: 0;
+  height: 2px;
+  background: orange;
+  transition: width 0.3s ease-in-out;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>A3</title>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <link rel="stylesheet" href="a3.css">
+    <script>
+      const options = {
+        config: {
+          // Vega-Lite default configuration
+        },
+        init: (view) => {
+          // initialize tooltip handler
+          view.tooltip(new vegaTooltip.Handler().call);
+        },
+        view: {
+          // view constructor options
+          // remove the loader if you don't want to default to vega-datasets!
+          loader: vega.loader({
+            baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
+          }),
+          renderer: "canvas",
+        },
+      };
+
+      // register vega and vega-lite with the API
+      vl.register(vega, vegaLite, options);
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a> |
+    </nav>
+    <div class="container">
+      <!-- visualization goes into this div you can create multiple divs and give them IDs -->
+      <!-- <div id="view"></div>
+      <div id="view2"></div> -->
+      <h1>A3: Videogame data visualization</h1>
+      <h2>Global sales of Videogames by Platform & Genre</h2>
+      <div id="view3"></div>
+      <h3>Global sales cont: Extended graph for minor Platforms</h3>
+      <div id="view4"></div>
+      <h2>Global sales of Videogames by Year, Platform & Genre</h2>
+      <div id="view5"></div>
+      <h3>By year cont: Extended graph for minor Platforms</h3>
+      <div id="view6"></div>
+      <h2>Regional Sales per Platform by Region</h2>
+      <div id="view7"></div>
+      <h2>Atari: The rise and fall (and rise again)</h2>
+      <div id="view8"></div>
+    </div>
+    <script type="module" src="a3.js"></script>
+  </body>
+</html>
